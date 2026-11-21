@@ -94,6 +94,43 @@ public partial class MainWindow : Window
         }
     }
 
+    private void BtnEliminar_Click(object? sender, RoutedEventArgs e)
+    {
+        if (lstJuegos.SelectedItem is not Juego seleccionado)
+        {
+            lblMensaje.Text = "Selecciona un juego de la lista para eliminarlo.";
+            return;
+        }
+
+        try
+        {
+            servicio.Borrar(seleccionado.Id);
+            CargarJuegos();
+            LimpiarFormulario();
+            lblMensaje.Text = "Juego eliminado correctamente.";
+        }
+        catch (Exception ex)
+        {
+            lblMensaje.Text = ex.Message;
+        }
+    }
+
+    private void BtnLimpiar_Click(object? sender, RoutedEventArgs e)
+    {
+        LimpiarFormulario();
+        lblMensaje.Text = "";
+    }
+
+    private void LimpiarFormulario()
+    {
+        txtTitulo.Text = "";
+        txtAnno.Text = "";
+        txtConsola.Text = "";
+        txtCalificacion.Text = "";
+        cmbEstado.SelectedItem = null;
+        lstJuegos.SelectedItem = null;
+    }
+
     private void LstJuegos_SelectionChanged(object? sender, SelectionChangedEventArgs e)
     {
         if (lstJuegos.SelectedItem is Juego juego)
