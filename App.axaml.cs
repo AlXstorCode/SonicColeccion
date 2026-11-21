@@ -2,6 +2,7 @@
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using SonicColeccion.Data;
+using SonicColeccion.Models;
 
 namespace SonicColeccion;
 
