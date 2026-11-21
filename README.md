@@ -117,7 +117,7 @@ Pasos:
 1. Clonar el repositorio:
 
    ```bash
-   git clone <URL-del-repositorio>
+   git clone https://github.com/AlXstorCode/SonicColeccion.git
    ```
 
 2. Entrar a la carpeta del proyecto:
