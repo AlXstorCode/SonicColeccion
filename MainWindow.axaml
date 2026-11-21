@@ -5,7 +5,7 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="SonicColeccion.MainWindow"
         Title="SonicColeccion">
-    <Grid ColumnDefinitions="300,*" Margin="15">
+    <Grid ColumnDefinitions="440,*" Margin="15">
 
     <StackPanel Grid.Column="0" Spacing="8" Margin="0,0,15,0">
         <TextBlock Text="Colección de juegos de Sonic" FontSize="18" FontWeight="Bold"/>

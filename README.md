@@ -202,7 +202,7 @@ Al abrir la aplicación, la lista de la derecha muestra los juegos almacenados e
 
 Se seleccionó un juego de la lista, se cambió su calificación en el formulario y se pulsó **Actualizar**. La lista mostró el valor nuevo y el mensaje «Juego actualizado correctamente».
 
-![Actualización de un juego](evidencias/03-actualizacion.png)
+![Actualización de un juego](evidencias/03-actualizaciones.png)
 
 ### Prueba 4 · Eliminación
 
@@ -214,7 +214,7 @@ Se seleccionó un juego y se pulsó **Eliminar**. El juego dejó de aparecer en 
 
 Se intentó guardar un juego con datos incorrectos (una calificación fuera del rango de 1 a 10). El programa mostró el mensaje de error y siguió funcionando, sin guardar el registro.
 
-![Validación de datos incorrectos](evidencias/05-validacion.png)
+![Validación de datos incorrectos](evidencias/05-validaciones.png)
 
 ### Prueba 6 · Persistencia
 
