@@ -212,7 +212,7 @@ Se seleccionó un juego y se pulsó **Eliminar**. El juego dejó de aparecer en 
 
 ### Prueba 5 · Validación
 
-Se intentó guardar un juego con datos incorrectos (una calificación fuera del rango de 1 a 10). El programa mostró el mensaje de error y siguió funcionando, sin guardar el registro.
+Se intentó guardar un juego dejando la consola vacía. El programa mostró el mensaje «La consola no puede estar vacía» y siguió funcionando, sin guardar el registro.
 
 ![Validación de datos incorrectos](evidencias/05-validaciones.png)
 
