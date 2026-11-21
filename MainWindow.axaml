@@ -5,5 +5,35 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="SonicColeccion.MainWindow"
         Title="SonicColeccion">
-    Welcome to Avalonia!
+    <Grid ColumnDefinitions="300,*" Margin="15">
+
+    <StackPanel Grid.Column="0" Spacing="8" Margin="0,0,15,0">
+        <TextBlock Text="Colección de juegos de Sonic" FontSize="18" FontWeight="Bold"/>
+
+        <TextBlock Text="Título"/>
+        <TextBox x:Name="txtTitulo"/>
+        <TextBlock Text="Año"/>
+        <TextBox x:Name="txtAnno"/>
+        <TextBlock Text="Consola"/>
+        <TextBox x:Name="txtConsola"/>
+
+        <TextBlock Text="Estado"/>
+        <ComboBox x:Name="cmbEstado" HorizontalAlignment="Stretch"/>
+
+        <TextBlock Text="Calificación (1 a 10)"/>
+        <TextBox x:Name="txtCalificacion"/>
+
+        <StackPanel Orientation="Horizontal" Spacing="8">
+            <Button x:Name="btnGuardar" Content="Guardar"/>
+            <Button x:Name="btnActualizar" Content="Actualizar"/>
+            <Button x:Name="btnEliminar" Content="Eliminar"/>
+            <Button x:Name="btnLimpiar" Content="Limpiar"/>
+        </StackPanel>
+
+        <TextBlock x:Name="lblMensaje" TextWrapping="Wrap"/>
+    </StackPanel>
+
+    <ListBox x:Name="lstJuegos" Grid.Column="1"/>
+
+</Grid>
 </Window>
