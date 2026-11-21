@@ -24,8 +24,8 @@
         <TextBox x:Name="txtCalificacion"/>
 
         <StackPanel Orientation="Horizontal" Spacing="8">
-            <Button x:Name="btnGuardar" Content="Guardar"/>
-            <Button x:Name="btnActualizar" Content="Actualizar"/>
+            <Button x:Name="btnGuardar" Content="Guardar" Click="BtnGuardar_Click"/>
+            <Button x:Name="btnActualizar" Content="Actualizar" Click="BtnActualizar_Click"/>
             <Button x:Name="btnEliminar" Content="Eliminar"/>
             <Button x:Name="btnLimpiar" Content="Limpiar"/>
         </StackPanel>
@@ -34,6 +34,7 @@
     </StackPanel>
 
     <ListBox x:Name="lstJuegos" Grid.Column="1"/>
+    <ListBox x:Name="lstJuegos" Grid.Column="1" SelectionChanged="LstJuegos_SelectionChanged"/>
 
 </Grid>
 </Window>
